@@ -1,0 +1,30 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "d:\\filefolder\\gumbogames\\bat game - october 2023\\bat game main game\\batgame_unrprj\\plugins\\fmodstudio\\source\\fmodstudio\\private\\fmodevent.cpp",
+        "ProvidedModule": "",
+        "PCH": "d:\\filefolder\\gumbogames\\bat game - october 2023\\bat game main game\\batgame_unrprj\\plugins\\fmodstudio\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\fmodstudio\\pch.fmodstudio.h.pch",
+        "Includes": [
+            "d:\\filefolder\\gumbogames\\bat game - october 2023\\bat game main game\\batgame_unrprj\\plugins\\fmodstudio\\source\\fmodstudio\\classes\\fmodevent.h",
+            "d:\\filefolder\\gumbogames\\bat game - october 2023\\bat game main game\\batgame_unrprj\\plugins\\fmodstudio\\source\\fmodstudio\\classes\\fmodasset.h",
+            "d:\\filefolder\\gumbogames\\bat game - october 2023\\bat game main game\\batgame_unrprj\\plugins\\fmodstudio\\intermediate\\build\\win64\\unrealeditor\\inc\\fmodstudio\\uht\\fmodasset.generated.h",
+            "d:\\filefolder\\gumbogames\\bat game - october 2023\\bat game main game\\batgame_unrprj\\plugins\\fmodstudio\\intermediate\\build\\win64\\unrealeditor\\inc\\fmodstudio\\uht\\fmodevent.generated.h",
+            "d:\\filefolder\\gumbogames\\bat game - october 2023\\bat game main game\\batgame_unrprj\\plugins\\fmodstudio\\source\\fmodstudio\\public\\fmodstudiomodule.h",
+            "c:\\program files\\epic games\\ue_5.3\\engine\\source\\runtime\\core\\public\\modules\\modulemanager.h",
+            "c:\\program files\\epic games\\ue_5.3\\engine\\source\\runtime\\core\\public\\modules\\boilerplate\\moduleboilerplate.h",
+            "c:\\program files\\epic games\\ue_5.3\\engine\\source\\runtime\\core\\public\\modules\\moduleinterface.h",
+            "d:\\filefolder\\gumbogames\\bat game - october 2023\\bat game main game\\batgame_unrprj\\plugins\\fmodstudio\\source\\fmodstudio\\public\\fmod\\fmod_studio.hpp",
+            "d:\\filefolder\\gumbogames\\bat game - october 2023\\bat game main game\\batgame_unrprj\\plugins\\fmodstudio\\source\\fmodstudio\\public\\fmod\\fmod_studio_common.h",
+            "d:\\filefolder\\gumbogames\\bat game - october 2023\\bat game main game\\batgame_unrprj\\plugins\\fmodstudio\\source\\fmodstudio\\public\\fmod\\fmod.h",
+            "d:\\filefolder\\gumbogames\\bat game - october 2023\\bat game main game\\batgame_unrprj\\plugins\\fmodstudio\\source\\fmodstudio\\public\\fmod\\fmod_common.h",
+            "d:\\filefolder\\gumbogames\\bat game - october 2023\\bat game main game\\batgame_unrprj\\plugins\\fmodstudio\\source\\fmodstudio\\public\\fmod\\fmod_codec.h",
+            "d:\\filefolder\\gumbogames\\bat game - october 2023\\bat game main game\\batgame_unrprj\\plugins\\fmodstudio\\source\\fmodstudio\\public\\fmod\\fmod_dsp.h",
+            "d:\\filefolder\\gumbogames\\bat game - october 2023\\bat game main game\\batgame_unrprj\\plugins\\fmodstudio\\source\\fmodstudio\\public\\fmod\\fmod_dsp_effects.h",
+            "d:\\filefolder\\gumbogames\\bat game - october 2023\\bat game main game\\batgame_unrprj\\plugins\\fmodstudio\\source\\fmodstudio\\public\\fmod\\fmod_output.h",
+            "d:\\filefolder\\gumbogames\\bat game - october 2023\\bat game main game\\batgame_unrprj\\plugins\\fmodstudio\\source\\fmodstudio\\public\\fmod\\fmod_studio.h",
+            "d:\\filefolder\\gumbogames\\bat game - october 2023\\bat game main game\\batgame_unrprj\\plugins\\fmodstudio\\source\\fmodstudio\\public\\fmod\\fmod.hpp"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}
