@@ -52,10 +52,7 @@ Session.vim
 .vs
 
 # FMOD
-FMOD/Events/
-FMODStudio/Docs/
-FMODStudio/Intermediate/
-FMODStudio/Resources/
-
-# FMOD Plugin
-Plugins/FMODStudio/
+/Plugins/FMOD/Events/
+/Plugins/FMODStudio/Docs/
+/Plugins/FMODStudio/Intermediate/
+/Plugins/FMODStudio/Resources/
