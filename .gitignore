@@ -49,9 +49,3 @@ Session.vim
 
 # Visual Studio
 .vs
-
-# FMOD
-FMOD/Events/
-FMODStudio/Docs/
-FMODStudio/Intermediate/
-FMODStudio/Resources/
