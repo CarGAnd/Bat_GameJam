@@ -56,3 +56,6 @@ FMOD/Events/
 FMODStudio/Docs/
 FMODStudio/Intermediate/
 FMODStudio/Resources/
+
+# FMOD Plugin
+Plugins/FMODStudio/

@@ -1,3 +1,3 @@
-// PCH for D:/FileFolder/GumboGames/Bat Game - October 2023/Bat Game Main Game/BatGame_UnrPrj/Plugins/FMODStudio/Source/FMODStudio/Private/FMODStudioPrivatePCH.h
-#include "D:/FileFolder/GumboGames/Bat Game - October 2023/Bat Game Main Game/BatGame_UnrPrj/Plugins/FMODStudio/Intermediate/Build/Win64/x64/UnrealEditor/Development/FMODStudio/Definitions.h"
-#include "D:/FileFolder/GumboGames/Bat Game - October 2023/Bat Game Main Game/BatGame_UnrPrj/Plugins/FMODStudio/Source/FMODStudio/Private/FMODStudioPrivatePCH.h"
+// PCH for C:/Users/Nenn/Documents/Unreal Projects/Bat_GameJam/Plugins/FMODStudio/Source/FMODStudio/Private/FMODStudioPrivatePCH.h
+#include "C:/Users/Nenn/Documents/Unreal Projects/Bat_GameJam/Plugins/FMODStudio/Intermediate/Build/Win64/x64/UnrealEditor/Development/FMODStudio/Definitions.h"
+#include "C:/Users/Nenn/Documents/Unreal Projects/Bat_GameJam/Plugins/FMODStudio/Source/FMODStudio/Private/FMODStudioPrivatePCH.h"

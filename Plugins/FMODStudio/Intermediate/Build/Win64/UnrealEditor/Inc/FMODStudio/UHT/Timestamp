@@ -1,20 +1,20 @@
-C:\Users\Nenn\Documents\Unreal Projects\Bat_GameJam\Plugins\FMODStudio\Source\FMODStudio\Classes\FMODAnimNotifyPlay.h
-C:\Users\Nenn\Documents\Unreal Projects\Bat_GameJam\Plugins\FMODStudio\Source\FMODStudio\Classes\FMODAmbientSound.h
-C:\Users\Nenn\Documents\Unreal Projects\Bat_GameJam\Plugins\FMODStudio\Source\FMODStudio\Classes\FMODSnapshotReverb.h
-C:\Users\Nenn\Documents\Unreal Projects\Bat_GameJam\Plugins\FMODStudio\Source\FMODStudio\Classes\FMODBlueprintStatics.h
-C:\Users\Nenn\Documents\Unreal Projects\Bat_GameJam\Plugins\FMODStudio\Source\FMODStudio\Classes\FMODSettings.h
-C:\Users\Nenn\Documents\Unreal Projects\Bat_GameJam\Plugins\FMODStudio\Source\FMODStudio\Classes\FMODAsset.h
-C:\Users\Nenn\Documents\Unreal Projects\Bat_GameJam\Plugins\FMODStudio\Source\FMODStudio\Classes\FMODPort.h
-C:\Users\Nenn\Documents\Unreal Projects\Bat_GameJam\Plugins\FMODStudio\Source\FMODStudio\Classes\FMODEvent.h
-C:\Users\Nenn\Documents\Unreal Projects\Bat_GameJam\Plugins\FMODStudio\Source\FMODStudio\Classes\FMODSnapshot.h
-C:\Users\Nenn\Documents\Unreal Projects\Bat_GameJam\Plugins\FMODStudio\Source\FMODStudio\Classes\FMODAudioComponent.h
-C:\Users\Nenn\Documents\Unreal Projects\Bat_GameJam\Plugins\FMODStudio\Source\FMODStudio\Classes\FMODBank.h
-C:\Users\Nenn\Documents\Unreal Projects\Bat_GameJam\Plugins\FMODStudio\Source\FMODStudio\Classes\FMODBus.h
-C:\Users\Nenn\Documents\Unreal Projects\Bat_GameJam\Plugins\FMODStudio\Source\FMODStudio\Classes\FMODVCA.h
-C:\Users\Nenn\Documents\Unreal Projects\Bat_GameJam\Plugins\FMODStudio\Source\FMODStudio\Private\Sequencer\FMODEventControlSectionTemplate.h
-C:\Users\Nenn\Documents\Unreal Projects\Bat_GameJam\Plugins\FMODStudio\Source\FMODStudio\Private\Sequencer\FMODEventControlSection.h
-C:\Users\Nenn\Documents\Unreal Projects\Bat_GameJam\Plugins\FMODStudio\Source\FMODStudio\Private\FMODBankLookup.h
-C:\Users\Nenn\Documents\Unreal Projects\Bat_GameJam\Plugins\FMODStudio\Source\FMODStudio\Private\Sequencer\FMODEventParameterTrack.h
-C:\Users\Nenn\Documents\Unreal Projects\Bat_GameJam\Plugins\FMODStudio\Source\FMODStudio\Private\Sequencer\FMODEventParameterSectionTemplate.h
-C:\Users\Nenn\Documents\Unreal Projects\Bat_GameJam\Plugins\FMODStudio\Source\FMODStudio\Private\FMODAssetLookup.h
-C:\Users\Nenn\Documents\Unreal Projects\Bat_GameJam\Plugins\FMODStudio\Source\FMODStudio\Private\Sequencer\FMODEventControlTrack.h
+D:\FileFolder\GumboGames\Bat Game - October 2023\Bat Game Main Game\BatGame_UnrPrj\Plugins\FMODStudio\Source\FMODStudio\Classes\FMODAmbientSound.h
+D:\FileFolder\GumboGames\Bat Game - October 2023\Bat Game Main Game\BatGame_UnrPrj\Plugins\FMODStudio\Source\FMODStudio\Classes\FMODAnimNotifyPlay.h
+D:\FileFolder\GumboGames\Bat Game - October 2023\Bat Game Main Game\BatGame_UnrPrj\Plugins\FMODStudio\Source\FMODStudio\Classes\FMODSnapshotReverb.h
+D:\FileFolder\GumboGames\Bat Game - October 2023\Bat Game Main Game\BatGame_UnrPrj\Plugins\FMODStudio\Source\FMODStudio\Classes\FMODBank.h
+D:\FileFolder\GumboGames\Bat Game - October 2023\Bat Game Main Game\BatGame_UnrPrj\Plugins\FMODStudio\Source\FMODStudio\Classes\FMODBlueprintStatics.h
+D:\FileFolder\GumboGames\Bat Game - October 2023\Bat Game Main Game\BatGame_UnrPrj\Plugins\FMODStudio\Source\FMODStudio\Classes\FMODVCA.h
+D:\FileFolder\GumboGames\Bat Game - October 2023\Bat Game Main Game\BatGame_UnrPrj\Plugins\FMODStudio\Source\FMODStudio\Classes\FMODPort.h
+D:\FileFolder\GumboGames\Bat Game - October 2023\Bat Game Main Game\BatGame_UnrPrj\Plugins\FMODStudio\Source\FMODStudio\Classes\FMODAsset.h
+D:\FileFolder\GumboGames\Bat Game - October 2023\Bat Game Main Game\BatGame_UnrPrj\Plugins\FMODStudio\Source\FMODStudio\Classes\FMODSnapshot.h
+D:\FileFolder\GumboGames\Bat Game - October 2023\Bat Game Main Game\BatGame_UnrPrj\Plugins\FMODStudio\Source\FMODStudio\Classes\FMODAudioComponent.h
+D:\FileFolder\GumboGames\Bat Game - October 2023\Bat Game Main Game\BatGame_UnrPrj\Plugins\FMODStudio\Source\FMODStudio\Classes\FMODBus.h
+D:\FileFolder\GumboGames\Bat Game - October 2023\Bat Game Main Game\BatGame_UnrPrj\Plugins\FMODStudio\Source\FMODStudio\Classes\FMODSettings.h
+D:\FileFolder\GumboGames\Bat Game - October 2023\Bat Game Main Game\BatGame_UnrPrj\Plugins\FMODStudio\Source\FMODStudio\Classes\FMODEvent.h
+D:\FileFolder\GumboGames\Bat Game - October 2023\Bat Game Main Game\BatGame_UnrPrj\Plugins\FMODStudio\Source\FMODStudio\Private\FMODAssetLookup.h
+D:\FileFolder\GumboGames\Bat Game - October 2023\Bat Game Main Game\BatGame_UnrPrj\Plugins\FMODStudio\Source\FMODStudio\Private\FMODBankLookup.h
+D:\FileFolder\GumboGames\Bat Game - October 2023\Bat Game Main Game\BatGame_UnrPrj\Plugins\FMODStudio\Source\FMODStudio\Private\Sequencer\FMODEventControlSection.h
+D:\FileFolder\GumboGames\Bat Game - October 2023\Bat Game Main Game\BatGame_UnrPrj\Plugins\FMODStudio\Source\FMODStudio\Private\Sequencer\FMODEventControlSectionTemplate.h
+D:\FileFolder\GumboGames\Bat Game - October 2023\Bat Game Main Game\BatGame_UnrPrj\Plugins\FMODStudio\Source\FMODStudio\Private\Sequencer\FMODEventControlTrack.h
+D:\FileFolder\GumboGames\Bat Game - October 2023\Bat Game Main Game\BatGame_UnrPrj\Plugins\FMODStudio\Source\FMODStudio\Private\Sequencer\FMODEventParameterSectionTemplate.h
+D:\FileFolder\GumboGames\Bat Game - October 2023\Bat Game Main Game\BatGame_UnrPrj\Plugins\FMODStudio\Source\FMODStudio\Private\Sequencer\FMODEventParameterTrack.h
