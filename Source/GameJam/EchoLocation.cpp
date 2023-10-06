@@ -30,6 +30,7 @@ void UEchoLocation::StopEchoLocation()
 		IsEchoLocationActive = true;
 
 		OnStopEchoLocation(HeldDuration);
+		BPEvent_OnEchoLocationTrigger.Broadcast();
 	}
 }
 

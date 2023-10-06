@@ -1,7 +1,6 @@
 // Fill out your copyright notice in the Description page of Project Settings.
-
-#include "EnhancedInputComponent.h"
 #include "MovementEvents.h"
+#include "EnhancedInputComponent.h"
 #include "GameJamCharacter.h"
 
 // Sets default values for this component's properties
