@@ -13,8 +13,11 @@ UCanHideComponent::UCanHideComponent()
 	// ...
 }
 
-void UCanHideComponent::SetIsHidden(bool _isHidden) {
-	if (_isHidden && !isHidden) OnActorIsHiddenStarted.Broadcast();
+void UCanHideComponent::SetIsHiddenCustom(bool _isHidden) {
+	if (_isHidden && !isHidden) {
+		OnActorIsHiddenStarted.Broadcast();
+		UE_LOG(LogTemp, Warning, TEXT("This happened."));
+	}
 	else if (!_isHidden && isHidden) OnActorIsHiddenStopped.Broadcast();
 	isHidden = _isHidden;
 }
