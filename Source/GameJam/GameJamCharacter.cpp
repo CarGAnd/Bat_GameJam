@@ -1,6 +1,7 @@
 // Copyright Epic Games, Inc. All Rights Reserved.
 
 #include "GameJamCharacter.h"
+#include "EchoLocation.h"
 #include "Engine/LocalPlayer.h"
 #include "Camera/CameraComponent.h"
 #include "Components/CapsuleComponent.h"
@@ -67,6 +68,12 @@ void AGameJamCharacter::BeginPlay()
 			Subsystem->AddMappingContext(DefaultMappingContext, 0);
 		}
 	}
+
+	EchoLocationComponent = FindComponentByClass<UEchoLocation>();
+	if (!EchoLocationComponent)
+	{
+		UE_LOG(LogTemp, Warning, TEXT("EchoLocationComponent not found on %s"), *GetName());
+	}
 }
 
 //////////////////////////////////////////////////////////////////////////
@@ -86,6 +93,14 @@ void AGameJamCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputCo
 
 		// Looking
 		EnhancedInputComponent->BindAction(LookAction, ETriggerEvent::Triggered, this, &AGameJamCharacter::Look);
+
+		EnhancedInputComponent->BindAction(EchoLocationAction, ETriggerEvent::Started, this, &AGameJamCharacter::StartEchoLocationWrapper);
+		EnhancedInputComponent->BindAction(EchoLocationAction, ETriggerEvent::Completed, this, &AGameJamCharacter::StopEchoLocationWrapper);
+		OnPawnPossessed.Broadcast(EnhancedInputComponent);
+		enhancedInputComponent = EnhancedInputComponent;
+
+
+		
 	}
 	else
 	{
@@ -126,5 +141,23 @@ void AGameJamCharacter::Look(const FInputActionValue& Value)
 		// add yaw and pitch input to controller
 		AddControllerYawInput(LookAxisVector.X);
 		AddControllerPitchInput(LookAxisVector.Y);
+	}
+}
+
+void AGameJamCharacter::StartEchoLocationWrapper()
+{
+	// Assume EchoLocationComponent is a member variable of type UEchoLocation*
+	if (EchoLocationComponent)
+	{
+		EchoLocationComponent->StartEchoLocation();
+	}
+}
+
+void AGameJamCharacter::StopEchoLocationWrapper()
+{
+	// Assume EchoLocationComponent is a member variable of type UEchoLocation*
+	if (EchoLocationComponent)
+	{
+		EchoLocationComponent->StopEchoLocation();
 	}
 }
