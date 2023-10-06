@@ -86,6 +86,8 @@ void AGameJamCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputCo
 
 		// Looking
 		EnhancedInputComponent->BindAction(LookAction, ETriggerEvent::Triggered, this, &AGameJamCharacter::Look);
+		OnPawnPossessed.Broadcast(EnhancedInputComponent);
+		enhancedInputComponent = EnhancedInputComponent;
 	}
 	else
 	{
