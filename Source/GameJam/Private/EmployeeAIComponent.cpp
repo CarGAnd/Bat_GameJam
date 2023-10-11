@@ -13,7 +13,7 @@ void UEmployeeAIComponent::UpdateCurrentTargetPosition(FAIRequestID RequestID, c
 	else
 		currentTargetPositionIndex = 0;
 
-	Patrol();
+	Patrol(patrolWaitTime, patrolAcceptanceRadius, patrolStopOnOverlap, patrolUsePathfinding, patrolCanStrafe);
 }
 
 void UEmployeeAIComponent::SubscribeToRequestFinished()
@@ -24,6 +24,38 @@ void UEmployeeAIComponent::SubscribeToRequestFinished()
 void UEmployeeAIComponent::UnsubscribeToRequestFinished()
 {
 	aiController->GetPathFollowingComponent()->OnRequestFinished.RemoveAll(this);
+}
+
+void UEmployeeAIComponent::InitializePatrol(float waitTime, float acceptanceRadius, bool stopOnOverlap, bool usePathfinding, bool canStrafe)
+{
+	if (patrolInitialized)
+		return;
+
+	patrolInitialized = true;
+	patrolWaitTime = waitTime;
+	patrolAcceptanceRadius = acceptanceRadius;
+	patrolStopOnOverlap = stopOnOverlap;
+	patrolUsePathfinding = usePathfinding;
+	patrolCanStrafe = canStrafe;
+}
+
+void UEmployeeAIComponent::Patrol(float waitTime = 0, float acceptanceRadius = 1.0, bool stopOnOverlap = true, bool usePathfinding = true, bool canStrafe = true)
+{
+	if (!IsValid(aiController))
+	{
+		UE_LOG(LogTemp, Warning, TEXT("No valid AI Controller."));
+		return;
+	}
+
+	if (patrolPositions.Num() <= 1)
+	{
+		UE_LOG(LogTemp, Warning, TEXT("Not enough patrol positions."));
+		return;
+	}
+
+	InitializePatrol(waitTime, acceptanceRadius, stopOnOverlap, usePathfinding, canStrafe);
+
+	aiController->MoveToActor(patrolPositions[currentTargetPositionIndex]);
 }
 
 // Sets default values for this component's properties
@@ -48,6 +80,7 @@ void UEmployeeAIComponent::BeginPlay()
 	if (!IsValid(Pawn))
 		return;
 
+	behaviourState.ChangeState(new PatrolState(this));
 	aiController = Pawn->GetController<AAIController>();
 	SubscribeToRequestFinished();
 }
@@ -57,30 +90,7 @@ void UEmployeeAIComponent::BeginPlay()
 void UEmployeeAIComponent::TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction)
 {
 	Super::TickComponent(DeltaTime, TickType, ThisTickFunction);
-
+	behaviourState.Tick();
 	// ...
-}
-
-void UEmployeeAIComponent::Patrol()
-{
-	if (state != EmployeeAIState::Patrol)
-	{
-		UE_LOG(LogTemp, Warning, TEXT("Not in Patrolling State."));
-		return;
-	}
-
-	if (!IsValid(aiController))
-	{
-		UE_LOG(LogTemp, Warning, TEXT("No valid AI Controller."));
-		return;
-	}
-
-	if (patrolPositions.Num() <= 1)
-	{
-		UE_LOG(LogTemp, Warning, TEXT("Not enough patrol positions."));
-		return;
-	}
-
-	aiController->MoveToActor(patrolPositions[currentTargetPositionIndex]);
 }
 
