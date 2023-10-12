@@ -2,6 +2,7 @@
 
 #include "GameJamCharacter.h"
 #include "EchoLocation.h"
+#include "BatGameInstance.h"
 #include "Engine/LocalPlayer.h"
 #include "Camera/CameraComponent.h"
 #include "Components/CapsuleComponent.h"
@@ -96,6 +97,8 @@ void AGameJamCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputCo
 
 		EnhancedInputComponent->BindAction(EchoLocationAction, ETriggerEvent::Started, this, &AGameJamCharacter::StartEchoLocationWrapper);
 		EnhancedInputComponent->BindAction(EchoLocationAction, ETriggerEvent::Completed, this, &AGameJamCharacter::StopEchoLocationWrapper);
+
+		EnhancedInputComponent->BindAction(PauseAction, ETriggerEvent::Triggered, this, &AGameJamCharacter::PauseGameInput);
 		OnPawnPossessed.Broadcast(EnhancedInputComponent);
 		enhancedInputComponent = EnhancedInputComponent;
 
@@ -159,5 +162,17 @@ void AGameJamCharacter::StopEchoLocationWrapper()
 	if (EchoLocationComponent)
 	{
 		EchoLocationComponent->StopEchoLocation();
+	}
+}
+
+void AGameJamCharacter::PauseGameInput() {
+	UBatGameInstance* GameStateManager = UBatGameInstance::GetInstance(this);
+	if (GameStateManager) {
+		if (GameStateManager->GetCurrentGameState() != EGameState::PauseGameState) {
+			GameStateManager->ChangeGameState(EGameState::PauseGameState);
+		}
+		else {
+
+		}
 	}
 }

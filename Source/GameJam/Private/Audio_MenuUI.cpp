@@ -2,8 +2,3 @@
 
 
 #include "Audio_MenuUI.h"
-
-void UAudio_MenuUI::SetMasterVolume(UFMODVCA* MasterVca, float Volume)
-{
-	UFMODBlueprintStatics::VCASetVolume(MasterVca, Volume);
-}
