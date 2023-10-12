@@ -23,7 +23,7 @@ void UBatGameInstance::ChangeGameState(EGameState NewState)
 
     switch (NewState)
     {
-    case EGameState::PauseGameState:
+    case EGameState::PausedGameState:
         OnGamePausedEvent.Broadcast();
         break;
     case EGameState::IntroSceneState:
@@ -35,7 +35,7 @@ void UBatGameInstance::ChangeGameState(EGameState NewState)
     case EGameState::WonGameState:
         OnGameWonEvent.Broadcast();
         break;
-    case EGameState::PlayingGameState:
+    case EGameState::UnpausedGameState:
         OnGamePlayingEvent.Broadcast();
         break;
     }

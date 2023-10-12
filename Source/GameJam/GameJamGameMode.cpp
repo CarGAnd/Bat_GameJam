@@ -7,9 +7,14 @@
 AGameJamGameMode::AGameJamGameMode()
 {
 	// set default pawn class to our Blueprinted character
-	static ConstructorHelpers::FClassFinder<APawn> PlayerPawnBPClass(TEXT("/Game/ThirdPerson/Blueprints/BP_ThirdPersonCharacter"));
-	if (PlayerPawnBPClass.Class != NULL)
-	{
-		DefaultPawnClass = PlayerPawnBPClass.Class;
-	}
+
+    DefaultPawnClass = nullptr;
+
 }
+
+APawn* AGameJamGameMode::SpawnDefaultPawnFor_Implementation(AController* NewPlayer, AActor* StartSpot)
+{
+    // Intentionally left empty to prevent spawning.
+    return nullptr;
+}
+

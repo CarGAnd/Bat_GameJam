@@ -1,7 +1,7 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 
-#include "Navigation/PathFollowingComponent.h"
 #include "EmployeeAIComponent.h"
+#include "Navigation/PathFollowingComponent.h"
 #include <functional>
 #include <typeinfo>
 
