@@ -1,19 +1,3 @@
-// Copyright Epic Games, Inc. All Rights Reserved.
-
-#pragma once
-
-#include "CoreMinimal.h"
-#include "GameFramework/GameModeBase.h"
-#include "GameJamGameMode.generated.h"
-
-UCLASS(minimalapi)
-class AGameJamGameMode : public AGameModeBase
-{
-	GENERATED_BODY()
-
-public:
-	AGameJamGameMode();
-};
-
-
-
+version https://git-lfs.github.com/spec/v1
+oid sha256:a1c4c8575803e135d9a3c8e170089b2a8a95332f043741349d1ead1519b53722
+size 420

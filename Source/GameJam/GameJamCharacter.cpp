@@ -168,8 +168,8 @@ void AGameJamCharacter::StopEchoLocationWrapper()
 void AGameJamCharacter::PauseGameInput() {
 	UBatGameInstance* GameStateManager = UBatGameInstance::GetInstance(this);
 	if (GameStateManager) {
-		if (GameStateManager->GetCurrentGameState() != EGameState::PauseGameState) {
-			GameStateManager->ChangeGameState(EGameState::PauseGameState);
+		if (GameStateManager->GetCurrentGameState() != EGameState::PausedGameState) {
+			GameStateManager->ChangeGameState(EGameState::PausedGameState);
 		}
 		else {
 
