@@ -11,7 +11,8 @@
 			"AdditionalDependencies": [
 				"AIModule",
 				"Engine",
-				"FMODStudio"
+				"FMODStudio",
+				"CoreUObject"
 			]
 		}
 	],
